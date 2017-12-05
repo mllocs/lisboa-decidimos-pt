@@ -1,6 +1,6 @@
 {
-  "name": "decidim_portugal",
-  "description": "decidim_portugal - Direct and participatory democracy web platform based on Decidim framework",
+  "name": "decidim-portugal",
+  "description": "decidim-portugal - Direct and participatory democracy web platform based on Decidim framework",
   "keywords": [],
   "addons": [
     "heroku-postgresql:hobby-dev",
