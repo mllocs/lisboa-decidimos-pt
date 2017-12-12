@@ -9,6 +9,8 @@
 #   config.enable_processing = !Rails.env.test?
 # end
 
+# require "carrierwave/storage/fog"
+
 # Setup CarrierWave to use Amazon S3. Add `gem "fog-aws" to your Gemfile.
 #
 CarrierWave.configure do |config|
