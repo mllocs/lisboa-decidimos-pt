@@ -9,12 +9,11 @@
 #   config.enable_processing = !Rails.env.test?
 # end
 
-# require "carrierwave/storage/fog"
+require "carrierwave/storage/fog"
 
 # Setup CarrierWave to use Amazon S3. Add `gem "fog-aws" to your Gemfile.
 #
 CarrierWave.configure do |config|
-  config.storage = :fog
   config.fog_provider = 'fog/aws'                                             # required
   config.fog_credentials = {
     provider:              'AWS',                                             # required
@@ -24,4 +23,5 @@ CarrierWave.configure do |config|
   config.fog_directory  = 'decidim-lisboa'                                    # required
   config.fog_public     = true                                                # optional, defaults to true
   config.fog_attributes = { 'Cache-Control' => "max-age=#{365.day.to_i}" }    # optional, defaults to {}
+  config.storage = :fog
 end
