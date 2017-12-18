@@ -1,8 +1,8 @@
 # frozen_string_literal: true
 
 Decidim.configure do |config|
-  config.application_name = "My Application Name"
-  config.mailer_sender = "change-me@domain.org"
+  config.application_name = "Decidimos Portugal"
+  config.mailer_sender = "info+noreply@decidimos.pt"
   config.authorization_handlers = ["ExampleAuthorizationHandler"]
 
   # Change these lines to set your preferred locales
