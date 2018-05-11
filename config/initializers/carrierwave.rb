@@ -12,7 +12,7 @@ if Rails.env.production?
       aws_access_key_id:     Rails.application.secrets.aws_access_key_id,       # required
       aws_secret_access_key: Rails.application.secrets.aws_secret_access_key,   # required
     }
-    config.fog_directory  = 'decidim-lisboa'                                    # required
+    config.fog_directory  = 'lisboa-decidimos-pt'                               # required
     config.fog_public     = true                                                # optional, defaults to true
     config.fog_attributes = { 'Cache-Control' => "max-age=#{365.day.to_i}" }    # optional, defaults to {}
     config.storage = :fog
